@@ -1,0 +1,501 @@
+app_id,library_name,version,risk_status,risk_type,severity,explanation
+APP-001,fastapi,0.19.13,at_risk,unmaintained,high,No release activity in 1686 days (last updated 2021-11-27).
+APP-001,setuptools,5.10.13,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,pyopenssl,4.3.12,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00001 (CVSS 9.4). Patch available.
+APP-001,lz4,1.8.1,at_risk,unmaintained,medium,No release activity in 1288 days (last updated 2022-12-30).
+APP-001,backoff,3.0.16,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00002 (CVSS 5.7). Patch available.
+APP-001,toml,5.6.11,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00003 (CVSS 4.2). Patch available.
+APP-001,pika,0.10.19,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,itsdangerous,5.3.23,at_risk,unmaintained,medium,No release activity in 1340 days (last updated 2022-11-08).
+APP-001,pytz,4.9.21,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00004 (CVSS 7.9). No patch available yet.
+APP-001,protobuf,2.12.22,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,python-dateutil,4.4.6,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,kafka-python,5.12.21,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,joblib,1.19.18,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-001,pytz,3.17.26,at_risk,unmaintained,high,No release activity in 1649 days (last updated 2022-01-03).
+APP-001,requests,2.9.6,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,pika,4.19.20,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00005 (CVSS 6.5). No patch available yet.
+APP-001,greenlet,3.14.14,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,watchdog,1.16.15,at_risk,unmaintained,medium,No release activity in 1472 days (last updated 2022-06-29).
+APP-001,tabulate,5.5.21,at_risk,unmaintained,medium,No release activity in 1143 days (last updated 2023-05-24).
+APP-001,cryptography,2.16.21,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00006 (CVSS 4.4). Exposure inherited through dependency chain.
+APP-001,ecdsa,4.10.2,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,dask,1.9.7,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,aiohttp,1.0.1,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,click,3.19.27,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,h5py,0.14.13,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00007 (CVSS 6.3). No patch available yet.
+APP-001,rsa,4.6.22,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,tenacity,3.15.12,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00008 (CVSS 5.2). Exposure inherited through dependency chain.
+APP-001,click,1.20.22,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00009 (CVSS 7.8). Exposure inherited through dependency chain.
+APP-001,requests,0.13.7,at_risk,transitive_vulnerability,critical,Transitive dependency matches CVE-2024-00010 (CVSS 9.9). Exposure inherited through dependency chain.
+APP-001,gunicorn,5.16.14,at_risk,unmaintained,high,No release activity in 1990 days (last updated 2021-01-27).
+APP-001,psycopg2,4.7.29,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-001,tensorflow,3.4.25,at_risk,unmaintained,medium,No release activity in 1124 days (last updated 2023-06-12).
+APP-001,authlib,5.16.17,at_risk,unmaintained,high,No release activity in 2188 days (last updated 2020-07-13).
+APP-001,pycparser,2.14.19,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00011 (CVSS 6.9). No patch available yet.
+APP-001,limits,4.13.26,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,orjson,3.5.23,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00012 (CVSS 6.1). Patch available.
+APP-001,oauthlib,3.8.24,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,click,5.8.24,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00013 (CVSS 6.3). Patch available.
+APP-001,openpyxl,4.15.20,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00014 (CVSS 4.2). Exposure inherited through dependency chain.
+APP-001,pydantic,2.14.2,at_risk,unmaintained,medium,No release activity in 938 days (last updated 2023-12-15).
+APP-001,ratelimit,2.7.8,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,typing-extensions,2.17.2,at_risk,unmaintained,high,No release activity in 1740 days (last updated 2021-10-04).
+APP-001,pillow,1.7.12,at_risk,unmaintained,high,No release activity in 1865 days (last updated 2021-06-01).
+APP-001,portalocker,1.6.2,at_risk,unmaintained,medium,No release activity in 1182 days (last updated 2023-04-15).
+APP-001,kafka-python,3.10.17,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,authlib,3.1.6,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-001,kafka-python,3.18.30,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-001,tenacity,0.18.12,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-001,defusedxml,0.11.9,at_risk,unmaintained,medium,No release activity in 1441 days (last updated 2022-07-30).
+APP-001,dask,3.13.17,at_risk,unmaintained,medium,No release activity in 1404 days (last updated 2022-09-05).
+APP-002,joblib,5.17.25,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00015 (CVSS 4.2). Patch available.
+APP-002,pyopenssl,1.15.7,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-002,idna,3.15.0,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,prometheus-client,2.12.23,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,werkzeug,3.4.19,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00016 (CVSS 4.4). No patch available yet.
+APP-002,toml,0.12.18,at_risk,unmaintained,high,No release activity in 1677 days (last updated 2021-12-06).
+APP-002,msgpack,5.0.2,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,dnspython,3.4.27,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-002,authlib,1.1.8,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-002,structlog,2.6.14,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,greenlet,2.12.8,at_risk,unmaintained,high,No release activity in 2003 days (last updated 2021-01-14).
+APP-002,dask,3.8.26,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,cryptography,3.0.23,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00017 (CVSS 7.2). Patch available.
+APP-002,tomli,0.11.7,at_risk,unmaintained,medium,No release activity in 1396 days (last updated 2022-09-13).
+APP-002,netaddr,0.20.1,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00018 (CVSS 9.8). Patch available.
+APP-002,dask,0.7.6,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-002,flask,4.4.7,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,torch,3.3.18,at_risk,unmaintained,medium,No release activity in 910 days (last updated 2024-01-12).
+APP-002,bcrypt,3.8.24,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,loguru,1.19.19,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,joblib,5.3.24,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-002,jinja2,2.3.18,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,django,2.18.21,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,structlog,3.6.2,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,cffi,5.20.7,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,pandas,5.9.27,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,filelock,4.3.25,at_risk,unmaintained,medium,No release activity in 1281 days (last updated 2023-01-06).
+APP-002,msgpack,0.11.17,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,confluent-kafka,5.11.2,at_risk,unmaintained,high,No release activity in 2063 days (last updated 2020-11-15).
+APP-002,cssselect,5.10.0,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-002,kafka-python,3.3.13,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00019 (CVSS 5.5). Patch available.
+APP-002,pip,5.14.22,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00020 (CVSS 5.6). Patch available.
+APP-002,pyyaml,3.5.23,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,feedparser,5.8.19,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00021 (CVSS 8.6). Exposure inherited through dependency chain.
+APP-002,toml,3.14.13,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,cachetools,4.8.10,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,click,0.8.28,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,twilio,1.14.18,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00022 (CVSS 7.5). No patch available yet.
+APP-002,service-identity,5.12.10,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,django,3.10.5,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00023 (CVSS 6.1). Patch available.
+APP-002,bleach,1.11.25,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00024 (CVSS 5.1). Patch available.
+APP-002,certifi,2.8.28,at_risk,unmaintained,medium,No release activity in 1408 days (last updated 2022-09-01).
+APP-002,pycparser,5.8.17,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00025 (CVSS 8.8). Exposure inherited through dependency chain.
+APP-002,urllib3,4.6.2,at_risk,unmaintained,high,No release activity in 1575 days (last updated 2022-03-18).
+APP-002,pydantic,5.13.15,at_risk,unmaintained,high,No release activity in 2073 days (last updated 2020-11-05).
+APP-002,ujson,1.15.20,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-002,ratelimit,3.14.25,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-002,flask,0.9.7,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,grpcio,5.7.9,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-002,ipaddress,4.11.15,at_risk,unmaintained,high,No release activity in 1504 days (last updated 2022-05-28).
+APP-003,orjson,4.11.13,at_risk,transitive_vulnerability,critical,Transitive dependency matches CVE-2024-00026 (CVSS 9.5). Exposure inherited through dependency chain.
+APP-003,joblib,4.10.11,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,tenacity,3.8.9,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00027 (CVSS 8.2). Exposure inherited through dependency chain.
+APP-003,attrs,1.3.23,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,httpx,2.3.23,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00028 (CVSS 9.7). Patch available.
+APP-003,toml,5.5.6,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,bcrypt,5.15.8,at_risk,unmaintained,medium,No release activity in 1067 days (last updated 2023-08-08).
+APP-003,limits,4.16.19,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,six,0.6.9,at_risk,unmaintained,medium,No release activity in 1129 days (last updated 2023-06-07).
+APP-003,marshmallow,2.5.9,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,urllib3,5.17.4,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00029 (CVSS 7.4). Patch available.
+APP-003,charset-normalizer,0.1.17,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,python-dateutil,5.4.20,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00030 (CVSS 9.0). No patch available yet.
+APP-003,dask,3.3.27,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-003,urllib3,4.9.15,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,defusedxml,3.10.5,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,psycopg2,2.15.3,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,celery,3.15.2,at_risk,unmaintained,medium,No release activity in 944 days (last updated 2023-12-09).
+APP-003,lz4,5.1.4,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00031 (CVSS 7.3). Patch available.
+APP-003,pyyaml,4.9.2,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00032 (CVSS 6.9). Exposure inherited through dependency chain.
+APP-003,click,0.17.24,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00033 (CVSS 4.3). Patch available.
+APP-003,kafka-python,4.19.25,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00034 (CVSS 4.1). Exposure inherited through dependency chain.
+APP-003,pyasn1,1.16.12,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,twilio,3.9.27,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00035 (CVSS 4.0). Exposure inherited through dependency chain.
+APP-003,cffi,3.9.18,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00036 (CVSS 8.8). Exposure inherited through dependency chain.
+APP-003,pyasn1,0.19.30,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,diskcache,0.6.20,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,bcrypt,2.2.5,at_risk,unmaintained,high,No release activity in 2004 days (last updated 2021-01-13).
+APP-003,pydantic,1.17.2,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-003,jinja2,0.13.14,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,portalocker,4.15.9,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,fastapi,1.9.22,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00037 (CVSS 8.3). Patch available.
+APP-003,six,5.14.2,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00038 (CVSS 4.4). Patch available.
+APP-003,filelock,1.8.25,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,tabulate,5.18.21,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00039 (CVSS 7.5). Exposure inherited through dependency chain.
+APP-003,rich,1.13.3,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00040 (CVSS 8.6). Patch available.
+APP-003,tomli,1.20.4,at_risk,transitive_vulnerability,critical,Transitive dependency matches CVE-2024-00041 (CVSS 9.8). Exposure inherited through dependency chain.
+APP-003,idna,1.2.1,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,werkzeug,2.19.23,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,msgpack,2.14.3,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,authlib,5.9.22,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-003,grpcio,2.16.17,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,tinycss2,3.2.19,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00042 (CVSS 8.2). No patch available yet.
+APP-003,sqlalchemy,3.10.19,at_risk,unmaintained,medium,No release activity in 1492 days (last updated 2022-06-09).
+APP-003,attrs,0.2.7,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-003,watchdog,4.18.30,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-003,flask,5.8.18,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,sqlalchemy,1.15.16,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-003,netaddr,3.8.5,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00043 (CVSS 7.5). Exposure inherited through dependency chain.
+APP-003,zstandard,3.20.26,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,bleach,0.15.11,at_risk,unmaintained,high,No release activity in 1774 days (last updated 2021-08-31).
+APP-004,protobuf,2.10.21,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-004,pandas,1.10.13,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,portalocker,3.9.21,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,grpcio,4.1.14,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,pyjwt,2.8.10,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,scikit-learn,3.16.26,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,requests,5.17.14,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00044 (CVSS 5.8). Patch available.
+APP-004,protobuf,0.6.16,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,pip,4.15.20,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00045 (CVSS 9.9). No patch available yet.
+APP-004,stripe,0.6.8,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-004,orjson,1.9.14,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00046 (CVSS 8.8). Exposure inherited through dependency chain.
+APP-004,tenacity,3.3.0,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,rsa,4.7.22,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,jinja2,2.17.0,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,orjson,3.2.7,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,scikit-learn,3.3.20,at_risk,license_conflict,high,"License 'GPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-004,pyyaml,3.9.16,at_risk,unmaintained,high,No release activity in 1520 days (last updated 2022-05-12).
+APP-004,backoff,2.13.26,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,defusedxml,3.7.14,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,orjson,1.12.6,at_risk,unmaintained,high,No release activity in 2137 days (last updated 2020-09-02).
+APP-004,pycparser,4.4.27,at_risk,unmaintained,medium,No release activity in 1390 days (last updated 2022-09-19).
+APP-004,celery,2.13.10,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,xlrd,4.8.26,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00047 (CVSS 7.9). Patch available.
+APP-004,requests,2.9.26,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00048 (CVSS 8.2). Patch available.
+APP-004,cffi,4.15.27,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00049 (CVSS 5.3). Patch available.
+APP-004,pyyaml,3.17.15,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,setuptools,2.17.24,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00050 (CVSS 6.3). Patch available.
+APP-004,tomli,3.14.29,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,greenlet,1.7.18,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,prometheus-client,1.13.1,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00051 (CVSS 4.8). Exposure inherited through dependency chain.
+APP-004,itsdangerous,5.15.22,at_risk,unmaintained,high,No release activity in 1575 days (last updated 2022-03-18).
+APP-004,structlog,3.20.4,at_risk,unmaintained,medium,No release activity in 1403 days (last updated 2022-09-06).
+APP-004,tinycss2,0.4.16,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,cffi,2.3.27,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,stripe,0.16.29,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00052 (CVSS 9.7). No patch available yet.
+APP-004,sendgrid,0.4.13,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-004,netaddr,1.2.15,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,xlrd,2.10.19,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-004,portalocker,3.20.2,at_risk,unmaintained,medium,No release activity in 1020 days (last updated 2023-09-24).
+APP-004,typing-extensions,5.17.12,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,itsdangerous,5.15.27,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,tomli,0.19.2,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,pydantic,5.9.7,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-004,joblib,0.13.3,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-004,xarray,5.3.14,at_risk,transitive_vulnerability,critical,Transitive dependency matches CVE-2024-00053 (CVSS 9.1). Exposure inherited through dependency chain.
+APP-004,werkzeug,5.9.28,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00054 (CVSS 5.1). Patch available.
+APP-004,django,0.10.25,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00055 (CVSS 9.5). Patch available.
+APP-004,redis-py,2.11.11,at_risk,unmaintained,medium,No release activity in 934 days (last updated 2023-12-19).
+APP-004,pika,1.7.16,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,protobuf,4.5.5,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00056 (CVSS 7.8). Exposure inherited through dependency chain.
+APP-005,gunicorn,0.19.27,at_risk,transitive_vulnerability,critical,Transitive dependency matches CVE-2024-00057 (CVSS 9.6). Exposure inherited through dependency chain.
+APP-005,structlog,4.7.15,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,zstandard,1.7.14,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,ecdsa,2.14.8,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00058 (CVSS 6.0). Exposure inherited through dependency chain.
+APP-005,psutil,0.14.28,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,six,5.17.5,at_risk,license_conflict,high,"License 'GPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-005,boto3,3.11.18,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00059 (CVSS 5.4). Patch available.
+APP-005,pytz,5.13.22,at_risk,unmaintained,medium,No release activity in 964 days (last updated 2023-11-19).
+APP-005,attrs,3.9.6,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-005,prometheus-client,3.3.7,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,structlog,4.11.18,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,python-dateutil,5.9.0,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,ipaddress,3.8.0,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,msgpack,5.1.29,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,pyopenssl,5.15.26,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,six,1.19.25,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00060 (CVSS 5.0). Exposure inherited through dependency chain.
+APP-005,wheel,1.20.6,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,pyasn1,2.4.20,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,numpy,5.20.1,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00061 (CVSS 8.9). Patch available.
+APP-005,markupsafe,3.1.18,at_risk,unmaintained,high,No release activity in 1715 days (last updated 2021-10-29).
+APP-005,pip,5.4.2,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,python-dateutil,2.13.5,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00062 (CVSS 6.7). Patch available.
+APP-005,aiohttp,1.17.28,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,pip,4.16.29,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-005,idna,1.8.29,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,defusedxml,2.10.25,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00063 (CVSS 5.3). Patch available.
+APP-005,scikit-learn,3.2.4,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,dask,1.12.30,at_risk,unmaintained,high,No release activity in 1712 days (last updated 2021-11-01).
+APP-005,rich,4.11.2,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,tabulate,3.0.8,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,toml,0.14.11,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,watchdog,5.8.18,at_risk,unmaintained,high,No release activity in 1678 days (last updated 2021-12-05).
+APP-005,structlog,5.11.3,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,watchdog,1.15.0,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-005,pyasn1,4.10.29,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,service-identity,1.20.2,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-005,ecdsa,3.9.20,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,protobuf,0.4.1,at_risk,unmaintained,medium,No release activity in 1452 days (last updated 2022-07-19).
+APP-005,fastapi,2.15.3,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00064 (CVSS 6.1). Exposure inherited through dependency chain.
+APP-005,numpy,1.17.4,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,prometheus-client,3.11.21,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00065 (CVSS 8.3). Patch available.
+APP-005,joblib,5.17.13,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-005,cffi,5.4.28,at_risk,unmaintained,high,No release activity in 1688 days (last updated 2021-11-25).
+APP-005,kafka-python,5.3.26,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00066 (CVSS 6.3). Exposure inherited through dependency chain.
+APP-005,bleach,4.13.30,at_risk,unmaintained,medium,No release activity in 1397 days (last updated 2022-09-12).
+APP-005,charset-normalizer,0.11.6,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00067 (CVSS 9.8). No patch available yet.
+APP-005,stripe,3.7.27,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-005,pip,0.11.17,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-005,dnspython,2.1.12,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-006,charset-normalizer,1.3.30,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00068 (CVSS 7.0). Exposure inherited through dependency chain.
+APP-006,sendgrid,0.6.20,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,ecdsa,4.0.1,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,xlrd,2.7.4,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,xlrd,4.6.2,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,xarray,4.6.18,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-006,bcrypt,1.10.24,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,lxml,4.0.8,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,lxml,1.17.8,at_risk,license_conflict,high,"License 'GPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-006,rich,1.3.21,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00069 (CVSS 6.1). Exposure inherited through dependency chain.
+APP-006,django,1.0.11,at_risk,unmaintained,high,No release activity in 2196 days (last updated 2020-07-05).
+APP-006,tabulate,1.18.10,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,flask,1.8.1,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00070 (CVSS 4.6). No patch available yet.
+APP-006,torch,5.13.16,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00071 (CVSS 8.7). Exposure inherited through dependency chain.
+APP-006,scikit-learn,5.2.15,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00072 (CVSS 5.0). Patch available.
+APP-006,twilio,2.16.18,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,pandas,3.16.7,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,service-identity,0.16.9,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,sendgrid,5.0.1,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,defusedxml,3.13.21,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00073 (CVSS 8.8). Patch available.
+APP-006,pandas,3.14.2,at_risk,unmaintained,medium,No release activity in 1417 days (last updated 2022-08-23).
+APP-006,cryptography,2.19.4,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,celery,1.8.19,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-006,ecdsa,4.17.22,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,greenlet,3.19.16,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00074 (CVSS 5.8). Patch available.
+APP-006,python-dateutil,3.16.19,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00075 (CVSS 5.6). Exposure inherited through dependency chain.
+APP-006,pika,0.3.27,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00076 (CVSS 4.4). Exposure inherited through dependency chain.
+APP-006,netaddr,5.17.23,at_risk,unmaintained,high,No release activity in 1627 days (last updated 2022-01-25).
+APP-006,bcrypt,3.14.28,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,marshmallow,3.10.26,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,sendgrid,3.13.23,at_risk,unmaintained,high,No release activity in 1781 days (last updated 2021-08-24).
+APP-006,numpy,2.13.10,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-006,psutil,2.11.30,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,pyyaml,5.15.2,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,pyjwt,0.2.13,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,numpy,5.11.25,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,torch,4.1.18,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,ujson,4.10.21,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00077 (CVSS 9.3). Patch available.
+APP-006,tensorflow,3.11.27,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,psutil,3.1.30,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00078 (CVSS 8.4). Exposure inherited through dependency chain.
+APP-006,six,4.9.11,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00079 (CVSS 6.0). No patch available yet.
+APP-006,pandas,4.16.6,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00080 (CVSS 8.2). No patch available yet.
+APP-006,pyyaml,5.15.7,at_risk,transitive_vulnerability,critical,Transitive dependency matches CVE-2024-00081 (CVSS 9.7). Exposure inherited through dependency chain.
+APP-006,pandas,2.17.11,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,scikit-learn,2.18.7,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00082 (CVSS 7.6). Exposure inherited through dependency chain.
+APP-006,confluent-kafka,4.19.19,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00083 (CVSS 4.9). Patch available.
+APP-006,watchdog,5.17.0,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,pyopenssl,5.8.0,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-006,uvicorn,2.9.29,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-006,packaging,2.0.5,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00084 (CVSS 6.0). Patch available.
+APP-007,lxml,4.12.2,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-007,lxml,5.20.0,at_risk,unmaintained,medium,No release activity in 1304 days (last updated 2022-12-14).
+APP-007,pyjwt,5.16.6,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,structlog,3.14.10,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,jinja2,2.9.23,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00085 (CVSS 6.5). Patch available.
+APP-007,greenlet,4.19.2,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00086 (CVSS 8.0). Exposure inherited through dependency chain.
+APP-007,psycopg2,1.5.24,at_risk,unmaintained,high,No release activity in 1567 days (last updated 2022-03-26).
+APP-007,pyasn1,0.2.8,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,stripe,5.13.15,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00087 (CVSS 5.4). Patch available.
+APP-007,pyopenssl,3.13.8,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00088 (CVSS 6.4). Exposure inherited through dependency chain.
+APP-007,bcrypt,4.3.11,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,pika,0.9.21,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00089 (CVSS 4.9). Patch available.
+APP-007,watchdog,4.15.16,at_risk,unmaintained,high,No release activity in 1509 days (last updated 2022-05-23).
+APP-007,psutil,2.1.7,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,opentelemetry-api,4.1.0,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,paramiko,2.6.24,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,pillow,2.9.10,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,tensorflow,0.15.23,at_risk,unmaintained,high,No release activity in 2077 days (last updated 2020-11-01).
+APP-007,pika,1.4.12,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00090 (CVSS 4.0). Patch available.
+APP-007,toml,5.7.16,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00091 (CVSS 5.8). Exposure inherited through dependency chain.
+APP-007,ujson,5.11.2,at_risk,license_conflict,high,"License 'GPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-007,opentelemetry-api,5.1.13,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00092 (CVSS 5.2). Exposure inherited through dependency chain.
+APP-007,flask,3.2.27,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,itsdangerous,4.13.18,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00093 (CVSS 5.2). Patch available.
+APP-007,grpcio,5.20.13,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,python-dateutil,0.12.0,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00094 (CVSS 9.9). No patch available yet.
+APP-007,greenlet,1.19.14,at_risk,unmaintained,high,No release activity in 1907 days (last updated 2021-04-20).
+APP-007,portalocker,2.2.13,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,pandas,1.13.18,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,grpcio,4.2.12,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,markupsafe,5.10.7,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,typing-extensions,1.2.16,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,ecdsa,0.16.16,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,httpx,2.11.23,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00095 (CVSS 9.1). Patch available.
+APP-007,dnspython,1.7.3,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00096 (CVSS 8.7). No patch available yet.
+APP-007,lxml,2.6.5,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,pyopenssl,1.20.2,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-007,gunicorn,5.15.14,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00097 (CVSS 6.9). Exposure inherited through dependency chain.
+APP-007,dask,4.18.14,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00098 (CVSS 4.5). Exposure inherited through dependency chain.
+APP-007,filelock,4.20.20,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,pyasn1,2.20.10,at_risk,unmaintained,medium,No release activity in 1329 days (last updated 2022-11-19).
+APP-007,pyyaml,3.2.15,at_risk,unmaintained,high,No release activity in 1618 days (last updated 2022-02-03).
+APP-007,stripe,5.9.25,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00099 (CVSS 5.1). No patch available yet.
+APP-007,charset-normalizer,4.1.11,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,cssselect,0.9.14,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,twilio,0.1.11,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,six,0.20.27,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-007,pyjwt,4.19.16,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00100 (CVSS 6.2). No patch available yet.
+APP-007,prometheus-client,3.18.17,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00101 (CVSS 4.3). No patch available yet.
+APP-007,tabulate,5.1.14,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00102 (CVSS 6.8). Patch available.
+APP-008,lz4,5.6.10,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00103 (CVSS 9.0). Patch available.
+APP-008,pyopenssl,3.16.4,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00104 (CVSS 4.9). Exposure inherited through dependency chain.
+APP-008,redis-py,3.3.25,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00105 (CVSS 4.5). Exposure inherited through dependency chain.
+APP-008,packaging,5.2.16,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00106 (CVSS 8.8). No patch available yet.
+APP-008,dnspython,1.1.7,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,backoff,3.14.16,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,feedparser,4.5.11,at_risk,unmaintained,high,No release activity in 2185 days (last updated 2020-07-16).
+APP-008,loguru,2.12.13,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,openpyxl,2.19.1,at_risk,unmaintained,high,No release activity in 1725 days (last updated 2021-10-19).
+APP-008,tabulate,5.20.10,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,celery,2.3.17,at_risk,license_conflict,critical,"License 'Custom' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-008,watchdog,3.9.8,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,limits,5.19.27,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,pyyaml,2.2.18,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-008,ipaddress,1.11.9,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,netaddr,5.12.4,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,pycparser,5.2.9,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00107 (CVSS 9.8). Patch available.
+APP-008,ujson,3.20.25,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00108 (CVSS 7.3). Exposure inherited through dependency chain.
+APP-008,typing-extensions,1.16.2,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,dnspython,5.13.16,at_risk,unmaintained,medium,No release activity in 999 days (last updated 2023-10-15).
+APP-008,pip,0.11.9,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00109 (CVSS 8.9). Exposure inherited through dependency chain.
+APP-008,uvicorn,1.10.30,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,h5py,3.6.7,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,pillow,1.2.9,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,xlrd,0.16.24,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,tomli,5.16.1,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,ipaddress,2.19.4,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-008,pycparser,3.4.5,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00110 (CVSS 9.8). No patch available yet.
+APP-008,uvicorn,5.19.25,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-008,werkzeug,5.14.1,at_risk,unmaintained,high,No release activity in 1779 days (last updated 2021-08-26).
+APP-008,protobuf,2.7.14,at_risk,unmaintained,medium,No release activity in 1094 days (last updated 2023-07-12).
+APP-008,service-identity,2.14.7,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,toml,1.9.30,at_risk,license_conflict,high,"License 'GPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-008,xlrd,3.6.11,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00111 (CVSS 7.4). Patch available.
+APP-008,watchdog,4.14.14,at_risk,unmaintained,high,No release activity in 1764 days (last updated 2021-09-10).
+APP-008,h5py,2.12.16,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,chardet,3.5.26,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,aiohttp,4.4.27,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,attrs,0.20.15,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,loguru,4.3.22,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,feedparser,0.9.2,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-008,xarray,1.8.14,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,beautifulsoup4,1.13.2,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00112 (CVSS 6.9). Exposure inherited through dependency chain.
+APP-008,passlib,3.11.29,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,django,3.1.12,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,cssselect,2.7.12,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,cryptography,2.7.0,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00113 (CVSS 6.4). Exposure inherited through dependency chain.
+APP-008,itsdangerous,0.20.10,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00114 (CVSS 7.0). Patch available.
+APP-008,tabulate,1.4.1,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-008,six,3.4.24,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,backoff,3.14.19,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00115 (CVSS 4.7). No patch available yet.
+APP-009,requests,0.0.8,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,bcrypt,1.17.30,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,cachetools,4.16.13,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,scikit-learn,2.7.9,at_risk,license_conflict,high,"License 'GPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-009,tensorflow,0.7.13,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,ecdsa,4.14.2,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-009,scikit-learn,3.19.17,at_risk,unmaintained,high,No release activity in 1548 days (last updated 2022-04-14).
+APP-009,flask,5.16.18,at_risk,unmaintained,high,No release activity in 1761 days (last updated 2021-09-13).
+APP-009,pydantic,5.4.9,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00116 (CVSS 5.0). Patch available.
+APP-009,confluent-kafka,0.19.11,at_risk,unmaintained,medium,No release activity in 934 days (last updated 2023-12-19).
+APP-009,pydantic,4.13.5,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,psutil,5.2.16,at_risk,transitive_vulnerability,critical,Transitive dependency matches CVE-2024-00117 (CVSS 9.8). Exposure inherited through dependency chain.
+APP-009,pip,0.16.17,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,cssselect,4.17.0,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,prometheus-client,3.1.20,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00118 (CVSS 4.8). No patch available yet.
+APP-009,prometheus-client,2.8.23,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,flask,2.2.11,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,pydantic,5.20.3,at_risk,license_conflict,high,"License 'GPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-009,h5py,4.10.4,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,sqlalchemy,2.17.10,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-009,dnspython,1.14.22,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,defusedxml,5.5.25,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00119 (CVSS 4.5). No patch available yet.
+APP-009,pillow,0.14.1,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00120 (CVSS 5.2). Patch available.
+APP-009,python-dateutil,1.1.25,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,aiohttp,0.10.29,at_risk,license_conflict,high,"License 'GPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-009,markupsafe,4.12.26,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,tomli,3.8.1,at_risk,unmaintained,high,No release activity in 1610 days (last updated 2022-02-11).
+APP-009,dask,5.6.9,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,wheel,0.20.10,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,idna,0.11.13,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,grpcio,5.14.28,at_risk,unmaintained,medium,No release activity in 1457 days (last updated 2022-07-14).
+APP-009,prometheus-client,2.5.15,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,portalocker,3.11.29,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00121 (CVSS 9.0). Patch available.
+APP-009,rich,4.8.25,at_risk,unmaintained,medium,No release activity in 1013 days (last updated 2023-10-01).
+APP-009,cryptography,5.13.2,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00122 (CVSS 5.9). Patch available.
+APP-009,pika,4.5.17,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00123 (CVSS 4.5). Exposure inherited through dependency chain.
+APP-009,python-dateutil,2.3.2,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00124 (CVSS 7.3). Exposure inherited through dependency chain.
+APP-009,greenlet,5.9.9,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,twilio,4.13.5,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00125 (CVSS 7.1). Patch available.
+APP-009,portalocker,3.11.14,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,sqlalchemy,5.11.19,at_risk,license_conflict,high,"License 'GPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-009,pika,2.20.25,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,redis-py,0.20.12,at_risk,unmaintained,high,No release activity in 1559 days (last updated 2022-04-03).
+APP-009,pip,4.5.30,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,django,1.19.21,at_risk,unmaintained,high,No release activity in 2070 days (last updated 2020-11-08).
+APP-009,xlrd,3.1.4,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00126 (CVSS 8.7). No patch available yet.
+APP-009,celery,1.20.11,at_risk,unmaintained,high,No release activity in 1956 days (last updated 2021-03-02).
+APP-009,pip,3.18.1,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-009,pyopenssl,1.14.30,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,loguru,2.14.24,at_risk,unmaintained,high,No release activity in 2032 days (last updated 2020-12-16).
+APP-010,boto3,4.4.16,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,pip,3.10.20,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-010,charset-normalizer,1.3.0,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00127 (CVSS 4.7). Patch available.
+APP-010,diskcache,1.15.16,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,prometheus-client,4.3.8,at_risk,unmaintained,medium,No release activity in 1402 days (last updated 2022-09-07).
+APP-010,openpyxl,2.14.6,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,service-identity,2.15.6,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,tensorflow,1.2.14,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00128 (CVSS 4.9). Patch available.
+APP-010,gunicorn,5.14.2,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,filelock,2.11.22,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,celery,4.17.9,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00129 (CVSS 9.5). Patch available.
+APP-010,pytz,1.20.5,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,tabulate,2.16.7,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,tensorflow,1.4.7,at_risk,license_conflict,high,"License 'GPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-010,tabulate,3.0.11,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,orjson,4.11.14,at_risk,transitive_vulnerability,high,Transitive dependency matches CVE-2024-00130 (CVSS 8.7). Exposure inherited through dependency chain.
+APP-010,rich,4.4.19,at_risk,license_conflict,high,"License 'GPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-010,pyjwt,0.9.12,at_risk,unmaintained,high,No release activity in 2062 days (last updated 2020-11-16).
+APP-010,ratelimit,5.15.16,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,protobuf,3.18.2,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,torch,2.20.2,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,twilio,3.16.11,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,torch,4.20.18,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-010,uvicorn,1.13.16,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,redis-py,0.16.4,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00131 (CVSS 9.3). Patch available.
+APP-010,pytz,1.5.10,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,backoff,1.11.30,at_risk,transitive_vulnerability,medium,Transitive dependency matches CVE-2024-00132 (CVSS 6.3). Exposure inherited through dependency chain.
+APP-010,feedparser,2.2.8,at_risk,license_conflict,critical,"License 'AGPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-010,aiohttp,5.17.8,at_risk,license_conflict,high,"License 'GPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-010,torch,5.9.19,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00133 (CVSS 7.4). No patch available yet.
+APP-010,toml,0.16.20,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00134 (CVSS 4.2). Patch available.
+APP-010,werkzeug,4.18.4,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00135 (CVSS 6.4). No patch available yet.
+APP-010,werkzeug,5.19.23,at_risk,unmaintained,high,No release activity in 1711 days (last updated 2021-11-02).
+APP-010,pyopenssl,2.18.1,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,django,0.1.30,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00136 (CVSS 4.2). Patch available.
+APP-010,dnspython,4.8.20,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,paramiko,4.13.19,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,ecdsa,0.15.28,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,rsa,4.9.20,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,pytz,3.7.25,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00137 (CVSS 8.1). Patch available.
+APP-010,filelock,3.9.14,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,boto3,5.1.5,at_risk,vulnerable,high,Direct dependency matches CVE-2024-00138 (CVSS 8.5). Patch available.
+APP-010,stripe,3.15.14,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-010,paramiko,2.19.4,at_risk,license_conflict,high,"License 'GPL-3.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-010,itsdangerous,5.10.23,at_risk,license_conflict,high,"License 'GPL-2.0' is outside the organizational policy baseline (Apache-2.0, BSD-3-Clause, CDDL-1.0, EPL-1.0, ISC, LGPL-2.1, LGPL-3.0, MIT, MPL-2.0, Proprietary, Unlicense)."
+APP-010,setuptools,3.4.24,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."
+APP-010,loguru,4.17.3,at_risk,vulnerable,critical,Direct dependency matches CVE-2024-00139 (CVSS 9.4). Patch available.
+APP-010,itsdangerous,1.14.3,at_risk,vulnerable,medium,Direct dependency matches CVE-2024-00140 (CVSS 6.0). Patch available.
+APP-010,idna,3.7.4,clean,none,none,"No known vulnerability, license conflict, or maintenance concern."

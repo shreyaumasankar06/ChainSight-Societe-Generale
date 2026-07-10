@@ -1,0 +1,62 @@
+[
+  {
+    "id": "APP-001",
+    "name": "TradeFlow Core",
+    "business_criticality": "critical",
+    "owner": "platform-trading@sg.com"
+  },
+  {
+    "id": "APP-002",
+    "name": "RiskEngine Pro",
+    "business_criticality": "critical",
+    "owner": "risk-analytics@sg.com"
+  },
+  {
+    "id": "APP-003",
+    "name": "ClientPortal Web",
+    "business_criticality": "high",
+    "owner": "digital-channels@sg.com"
+  },
+  {
+    "id": "APP-004",
+    "name": "Payments Gateway",
+    "business_criticality": "critical",
+    "owner": "payments@sg.com"
+  },
+  {
+    "id": "APP-005",
+    "name": "Compliance Reporter",
+    "business_criticality": "high",
+    "owner": "regulatory-tech@sg.com"
+  },
+  {
+    "id": "APP-006",
+    "name": "Market Data Hub",
+    "business_criticality": "high",
+    "owner": "market-data@sg.com"
+  },
+  {
+    "id": "APP-007",
+    "name": "Internal Admin Console",
+    "business_criticality": "medium",
+    "owner": "internal-tools@sg.com"
+  },
+  {
+    "id": "APP-008",
+    "name": "Document Archiver",
+    "business_criticality": "medium",
+    "owner": "document-services@sg.com"
+  },
+  {
+    "id": "APP-009",
+    "name": "DevSandbox API",
+    "business_criticality": "low",
+    "owner": "developer-experience@sg.com"
+  },
+  {
+    "id": "APP-010",
+    "name": "Legacy Batch Runner",
+    "business_criticality": "medium",
+    "owner": "batch-ops@sg.com"
+  }
+]
