@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% block title %}ChainSight | Applications SBOM Dashboard{% endblock %}
+
+{% block content %}
+<header class="page-header">
+    <div>
+        <h1 class="page-title">Applications Dashboard</h1>
+        <p class="page-subtitle">Security posture assessment and transitive dependency scoring across active projects.</p>
+    </div>
+    <div>
+        <span class="badge badge-outline">Updated: Just Now</span>
+    </div>
+</header>
+
+<!-- Statistics Grid -->
+<div class="grid-cols-3">
+    <!-- Stat Card 1 -->
+    <div class="card stat-card" id="stat-total-apps">
+        <div class="stat-info">
+            <span class="stat-label">Monitored Applications</span>
+            <span class="stat-value">{{ apps|length }}</span>
+        </div>
+        <div class="stat-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                <line x1="6" y1="18" x2="6.01" y2="18"/>
+            </svg>
+        </div>
+    </div>
+    
+    <!-- Stat Card 2 -->
+    <div class="card stat-card" id="stat-avg-risk">
+        <div class="stat-info">
+            <span class="stat-label">Average Risk Score</span>
+            <span class="stat-value">47.3</span>
+        </div>
+        <div class="stat-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--risk-high);">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Stat Card 3 -->
+    <div class="card stat-card" id="stat-critical-issues">
+        <div class="stat-info">
+            <span class="stat-label">Critical Findings</span>
+            <span class="stat-value" style="color: var(--risk-critical);">2</span>
+        </div>
+        <div class="stat-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--risk-critical);">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<!-- Application List Card -->
+<div class="card" id="apps-list-card">
+    <div class="card-title">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);">
+            <line x1="8" y1="6" x2="21" y2="6"/>
+            <line x1="8" y1="12" x2="21" y2="12"/>
+            <line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/>
+            <line x1="3" y1="12" x2="3.01" y2="12"/>
+            <line x1="3" y1="18" x2="3.01" y2="18"/>
+        </svg>
+        <span>Monitored Application Repositories</span>
+    </div>
+    
+    <div class="table-container">
+        <table class="data-table" id="apps-table">
+            <thead>
+                <tr>
+                    <th>Application Name</th>
+                    <th>Version</th>
+                    <th>Tech Stack</th>
+                    <th>Vulnerabilities</th>
+                    <th>License Issues</th>
+                    <th>Dependencies</th>
+                    <th>Risk Score</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for app in apps %}
+                <tr id="app-row-{{ app.id }}">
+                    <td style="font-weight: 600;">{{ app.name }}</td>
+                    <td class="text-mono" style="color: var(--text-secondary);">{{ app.version }}</td>
+                    <td>{{ app.language }}</td>
+                    <td>
+                        <span class="badge" style="background: rgba(239, 68, 68, 0.15); color: var(--risk-critical); margin-right: 0.25rem;">
+                            {{ app.vulnerabilities.critical }} Crit
+                        </span>
+                        <span class="badge" style="background: rgba(249, 115, 22, 0.15); color: var(--risk-high);">
+                            {{ app.vulnerabilities.high }} High
+                        </span>
+                    </td>
+                    <td>
+                        {% if app.license_issues > 0 %}
+                        <span class="badge" style="background: rgba(239, 68, 68, 0.15); color: var(--risk-critical); font-weight: bold;">
+                            {{ app.license_issues }} Alert
+                        </span>
+                        {% else %}
+                        <span class="badge badge-outline">Clean</span>
+                        {% endif %}
+                    </td>
+                    <td class="text-mono">{{ app.dependencies_count }} dependencies</td>
+                    <td>
+                        {% if app.risk_score >= 80 %}
+                        <span class="score-badge score-critical">{{ app.risk_score }}/100</span>
+                        {% elif app.risk_score >= 40 %}
+                        <span class="score-badge score-high">{{ app.risk_score }}/100</span>
+                        {% elif app.risk_score >= 20 %}
+                        <span class="score-badge score-medium">{{ app.risk_score }}/100</span>
+                        {% else %}
+                        <span class="score-badge score-low">{{ app.risk_score }}/100</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a href="{{ url_for('risk_report', app_id=app.id) }}" class="btn btn-secondary btn-sm" id="btn-view-{{ app.id }}">
+                            View Report
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
