@@ -8,6 +8,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from flask import Flask, abort, render_template, request
 
 from dashboard_data import get_dashboard_data
+from src.library_lookup import lookup_library_apps
 
 app = Flask(__name__)
 
@@ -21,15 +22,11 @@ def index():
 
 @app.route("/library-search")
 def library_search():
-    query = request.args.get("q", "").strip().lower()
-    data = get_dashboard_data()
+    query = request.args.get("q", "").strip()
     results = []
     if query:
-        for lib in data["libraries"].values():
-            if query in lib["name"].lower() or query in lib["license"].lower():
-                results.append(lib)
-        results.sort(key=lambda lib: lib["name"])
-    return render_template("library_search.html", query=request.args.get("q", ""), results=results)
+        results = lookup_library_apps(query)
+    return render_template("library_search.html", query=query, results=results)
 
 
 @app.route("/risk-report/<app_id>")
