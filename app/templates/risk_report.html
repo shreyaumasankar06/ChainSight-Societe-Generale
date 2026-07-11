@@ -161,66 +161,161 @@
             </div>
         </div>
 
-        <!-- Sample at-risk chain from real data (full graph: app.graph JSON in template) -->
-        <div class="graph-visualization" id="graph-panel">
-            {% if app.findings and app.findings[0].path %}
-            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
-                Top risk chain: <code class="text-mono">{{ app.findings[0].path }}</code>
-            </p>
-            {% endif %}
+        <!-- Dynamic Network graph visualization (full graph: app.graph JSON in template) -->
+        <div class="graph-visualization" id="graph-panel" style="padding: 0; min-height: 380px; position: relative;">
+            <div id="vis-network-container" style="width: 100%; height: 380px; position: absolute; top: 0; left: 0;"></div>
             <script type="application/json" id="graph-data">{{ app.graph | tojson }}</script>
-            <svg width="100%" height="100%" viewBox="0 0 800 320" style="background: transparent;">
-                <!-- Graph Edges / Connectors -->
-                <line class="mock-edge" x1="100" y1="160" x2="280" y2="80" stroke="rgba(255, 255, 255, 0.2)" stroke-width="2" />
-                <line class="mock-edge" x1="100" y1="160" x2="280" y2="160" stroke="rgba(255, 255, 255, 0.2)" stroke-width="2" />
-                <line class="mock-edge" x1="100" y1="160" x2="280" y2="240" stroke="rgba(255, 255, 255, 0.2)" stroke-width="2" />
-                
-                <line class="mock-edge" x1="280" y1="80" x2="480" y2="50" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1.5" />
-                <line class="mock-edge" x1="280" y1="80" x2="480" y2="100" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1.5" />
-                <line class="mock-edge" x1="280" y1="240" x2="480" y2="240" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1.5" />
+            <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+            <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                try {
+                    const container = document.getElementById('vis-network-container');
+                    const graphData = JSON.parse(document.getElementById('graph-data').textContent);
+                    
+                    if (!graphData || !graphData.nodes || graphData.nodes.length === 0) {
+                        container.innerHTML = '<div style="padding: 2rem; text-align: center; color: var(--text-secondary);">No graph data available</div>';
+                        return;
+                    }
 
-                <!-- Nodes -->
-                <!-- Root App Node (Root) -->
-                <g class="mock-node" transform="translate(0, 0)">
-                    <circle cx="100" cy="160" r="32" fill="var(--bg-surface-opaque)" stroke="var(--primary)" stroke-width="3" style="filter: drop-shadow(0 0 10px var(--primary-glow));"/>
-                    <text x="100" y="164" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Root App</text>
-                </g>
+                    // Build a Set of active path edges to highlight vulnerability chains
+                    const activePathEdges = new Set();
+                    graphData.nodes.forEach(node => {
+                        if (node.path && node.path.length > 1) {
+                            for (let i = 0; i < node.path.length - 1; i++) {
+                                const fromNode = node.path[i];
+                                const toNode = node.path[i+1];
+                                activePathEdges.add(`${fromNode}->${toNode}`);
+                            }
+                        }
+                    });
 
-                <!-- Level 1 Dependencies -->
-                <!-- Spring Web (Medium vulnerability example) -->
-                <g class="mock-node" style="animation-delay: -1.5s;" transform="translate(0, 0)">
-                    <circle cx="280" cy="80" r="26" fill="var(--bg-surface-opaque)" stroke="var(--risk-medium)" stroke-width="2" style="filter: drop-shadow(0 0 8px var(--risk-medium-glow));"/>
-                    <text x="280" y="84" fill="#ffffff" font-size="10" text-anchor="middle">spring-web</text>
-                </g>
+                    // Format nodes
+                    const nodes = graphData.nodes.map(node => {
+                        let color = {
+                            background: '#10b981', // green / low / none
+                            border: '#0d9488',
+                            highlight: { background: '#14b8a6', border: '#ffffff' }
+                        };
+                        let shape = 'dot';
+                        let size = 12;
 
-                <!-- log4j-core (Critical vulnerability example) -->
-                <g class="mock-node" style="animation-delay: -3s;" transform="translate(0, 0)">
-                    <circle cx="280" cy="160" r="28" fill="var(--bg-surface-opaque)" stroke="var(--risk-critical)" stroke-width="3" style="filter: drop-shadow(0 0 12px var(--risk-critical-glow));"/>
-                    <text x="280" y="164" fill="#ffffff" font-size="10" font-weight="600" text-anchor="middle">log4j-core</text>
-                </g>
+                        if (node.kind === 'app') {
+                            color = {
+                                background: '#3b82f6', // blue root app
+                                border: '#2563eb',
+                                highlight: { background: '#60a5fa', border: '#ffffff' }
+                            };
+                            shape = 'dot';
+                            size = 18;
+                        } else {
+                            if (node.severity === 'critical') {
+                                color = {
+                                    background: '#ef4444', // red
+                                    border: '#dc2626',
+                                    highlight: { background: '#f87171', border: '#ffffff' }
+                                };
+                                size = 16;
+                            } else if (node.severity === 'high') {
+                                color = {
+                                    background: '#f97316', // orange
+                                    border: '#ea580c',
+                                    highlight: { background: '#fb923c', border: '#ffffff' }
+                                };
+                                size = 15;
+                            } else if (node.severity === 'medium') {
+                                color = {
+                                    background: '#eab308', // yellow
+                                    border: '#ca8a04',
+                                    highlight: { background: '#fde047', border: '#ffffff' }
+                                };
+                                size = 13;
+                            }
+                        }
 
-                <!-- gpl-uploader-lib (Compliance/License violation example) -->
-                <g class="mock-node" style="animation-delay: -4.5s;" transform="translate(0, 0)">
-                    <circle cx="280" cy="240" r="26" fill="var(--bg-surface-opaque)" stroke="var(--risk-high)" stroke-width="2" style="filter: drop-shadow(0 0 8px var(--risk-high-glow));"/>
-                    <text x="280" y="244" fill="#ffffff" font-size="10" text-anchor="middle">gpl-uploader</text>
-                </g>
+                        return {
+                            id: node.id,
+                            label: node.label,
+                            title: `ID: ${node.id}\nRisk Score: ${node.risk_score || 0}\nSeverity: ${node.severity.toUpperCase()}\nType: ${node.kind.toUpperCase()}`,
+                            color: color,
+                            shape: shape,
+                            size: size,
+                            font: {
+                                color: '#f3f4f6',
+                                face: 'Outfit',
+                                size: node.kind === 'app' ? 12 : 9
+                            },
+                            shadow: {
+                                enabled: node.severity === 'critical' || node.severity === 'high',
+                                color: node.severity === 'critical' ? 'rgba(239, 68, 68, 0.4)' : 'rgba(249, 115, 22, 0.4)',
+                                size: 12,
+                                x: 0,
+                                y: 0
+                            }
+                        };
+                    });
 
-                <!-- Level 2 Dependencies -->
-                <g class="mock-node" style="animation-delay: -0.5s;" transform="translate(0, 0)">
-                    <circle cx="480" cy="50" r="18" fill="var(--bg-surface-opaque)" stroke="var(--risk-low)" stroke-width="1.5" />
-                    <text x="480" y="53" fill="var(--text-secondary)" font-size="9" text-anchor="middle">starter-web</text>
-                </g>
-                
-                <g class="mock-node" style="animation-delay: -2s;" transform="translate(0, 0)">
-                    <circle cx="480" cy="100" r="18" fill="var(--bg-surface-opaque)" stroke="var(--risk-low)" stroke-width="1.5" />
-                    <text x="480" y="103" fill="var(--text-secondary)" font-size="9" text-anchor="middle">spring-core</text>
-                </g>
+                    // Format edges
+                    const edges = graphData.edges.map(edge => {
+                        const key = `${edge.from}->${edge.to}`;
+                        const isActive = activePathEdges.has(key);
+                        
+                        return {
+                            from: edge.from,
+                            to: edge.to,
+                            color: isActive ? '#ef4444' : 'rgba(255, 255, 255, 0.1)',
+                            width: isActive ? 2.5 : 1,
+                            arrows: {
+                                to: {
+                                    enabled: true,
+                                    scaleFactor: isActive ? 0.7 : 0.4
+                                }
+                            },
+                            dashes: !isActive,
+                            smooth: {
+                                enabled: true,
+                                type: 'continuous',
+                                roundness: 0.4
+                            }
+                        };
+                    });
 
-                <g class="mock-node" style="animation-delay: -4s;" transform="translate(0, 0)">
-                    <circle cx="480" cy="240" r="18" fill="var(--bg-surface-opaque)" stroke="var(--risk-low)" stroke-width="1.5" />
-                    <text x="480" y="243" fill="var(--text-secondary)" font-size="9" text-anchor="middle">gpl-helper</text>
-                </g>
-            </svg>
+                    const data = {
+                        nodes: new vis.DataSet(nodes),
+                        edges: new vis.DataSet(edges)
+                    };
+
+                    const options = {
+                        physics: {
+                            enabled: true,
+                            solver: 'barnesHut',
+                            barnesHut: {
+                                gravitationalConstant: -2200,
+                                centralGravity: 0.25,
+                                springLength: 85,
+                                springConstant: 0.05,
+                                damping: 0.09,
+                                avoidOverlap: 0.65
+                            },
+                            stabilization: {
+                                enabled: true,
+                                iterations: 120,
+                                updateInterval: 25
+                            }
+                        },
+                        interaction: {
+                            dragNodes: true,
+                            zoomView: true,
+                            dragView: true,
+                            hover: true
+                        }
+                    };
+
+                    new vis.Network(container, data, options);
+                } catch (e) {
+                    console.error("Vis Network initialization failed: ", e);
+                }
+            });
+            </script>
         </div>
     </div>
 </div>
