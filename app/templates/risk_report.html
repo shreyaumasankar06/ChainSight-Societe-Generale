@@ -153,12 +153,22 @@
                 <line x1="12" y1="8" x2="12.01" y2="8"/>
             </svg>
             <div>
-                <strong>Graph Visualization Placeholder:</strong> Hover nodes below to inspect SBOM dependencies. A production-grade interactive canvas using <em>NetworkX</em> data structures will be fully wired in Step 5.
+                <strong>Graph data ready:</strong> Nodes and edges are loaded from the real SBOM graph
+                (<code>{{ app.graph.nodes|length }}</code> nodes, <code>{{ app.graph.edges|length }}</code> edges).
+                Build the interactive canvas from <code>app.graph</code> — color nodes by
+                <code>severity</code> / <code>risk_score</code> and use each finding's
+                <code>path_steps</code> for explainability chains.
             </div>
         </div>
 
-        <!-- Inline SVG representation of mock graph -->
+        <!-- Sample at-risk chain from real data (full graph: app.graph JSON in template) -->
         <div class="graph-visualization" id="graph-panel">
+            {% if app.findings and app.findings[0].path %}
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                Top risk chain: <code class="text-mono">{{ app.findings[0].path }}</code>
+            </p>
+            {% endif %}
+            <script type="application/json" id="graph-data">{{ app.graph | tojson }}</script>
             <svg width="100%" height="100%" viewBox="0 0 800 320" style="background: transparent;">
                 <!-- Graph Edges / Connectors -->
                 <line class="mock-edge" x1="100" y1="160" x2="280" y2="80" stroke="rgba(255, 255, 255, 0.2)" stroke-width="2" />
@@ -238,6 +248,7 @@
                     <th>Vulnerability ID</th>
                     <th>CVSS Score</th>
                     <th>Status / Severity</th>
+                    <th>Dependency Chain</th>
                     <th>Remediation Suggestion</th>
                 </tr>
             </thead>
@@ -270,6 +281,13 @@
                             <span class="badge score-medium">{{ finding.severity }}</span>
                         {% else %}
                             <span class="badge score-low">{{ finding.severity }}</span>
+                        {% endif %}
+                    </td>
+                    <td style="color: var(--text-secondary); font-size: 0.85rem;" class="text-mono">
+                        {% if finding.path %}
+                            {{ finding.path }}
+                        {% else %}
+                            <span style="color: var(--text-muted);">—</span>
                         {% endif %}
                     </td>
                     <td style="color: var(--text-secondary); font-size: 0.9rem;">

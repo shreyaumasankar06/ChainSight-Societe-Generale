@@ -1,0 +1,5 @@
+# Web dashboard (app/main.py)
+Flask>=3.0.0,<4.0.0
+
+# Dependency graph traversal (src/graph_builder.py, src/traversal.py)
+networkx>=3.2,<4.0.0

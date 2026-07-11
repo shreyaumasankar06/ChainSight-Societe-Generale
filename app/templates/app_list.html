@@ -35,7 +35,7 @@
     <div class="card stat-card" id="stat-avg-risk">
         <div class="stat-info">
             <span class="stat-label">Average Risk Score</span>
-            <span class="stat-value">47.3</span>
+            <span class="stat-value">{{ stats.avg_risk_score }}</span>
         </div>
         <div class="stat-icon-wrapper">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--risk-high);">
@@ -50,7 +50,7 @@
     <div class="card stat-card" id="stat-critical-issues">
         <div class="stat-info">
             <span class="stat-label">Critical Findings</span>
-            <span class="stat-value" style="color: var(--risk-critical);">2</span>
+            <span class="stat-value" style="color: var(--risk-critical);">{{ stats.critical_findings }}</span>
         </div>
         <div class="stat-icon-wrapper">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--risk-critical);">

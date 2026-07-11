@@ -5,6 +5,12 @@ Generate internally consistent ChainSight sample data.
 Labels in dependency_labels.csv are derived from the same vulnerability,
 license, and maintenance signals used to build the other files — not patched
 in afterward.
+
+Dependency graph shape (demo scope):
+  - Exactly two levels: App -> direct -> transitive (no transitive chains).
+  - parent_library is a single string; when multiple direct deps could plausibly
+    pull in the same library, one parent is picked arbitrarily.
+  - Direct rows use parent_library = app_id (empty string is also accepted).
 """
 
 from __future__ import annotations
@@ -109,6 +115,7 @@ class Dependency:
     version: str
     license_type: str
     dependency_type: str  # direct | transitive
+    parent_library: str  # app_id for direct; introducing direct lib name for transitive
     last_updated: date
     label_category: str  # planned ground-truth bucket
 
@@ -221,6 +228,8 @@ def build_dependencies(rng: random.Random, label_slots: list[str]) -> list[Depen
     pair_idx = 0
 
     for app_id, _, _, _ in APP_TEMPLATES:
+        app_deps: list[Dependency] = []
+
         for i in range(DEPS_PER_APP):
             dependency_type = "direct" if i < 15 else "transitive"
             category = label_slots[slot_idx]
@@ -250,15 +259,37 @@ def build_dependencies(rng: random.Random, label_slots: list[str]) -> list[Depen
                 license_type = rng.choice(safe_licenses)
                 last_updated = _recent_date(rng)
 
-            deps.append(
+            app_deps.append(
                 Dependency(
                     app_id=app_id,
                     library_name=library_name,
                     version=version,
                     license_type=license_type,
                     dependency_type=dependency_type,
+                    parent_library="",
                     last_updated=last_updated,
                     label_category=category,
+                )
+            )
+
+        direct_names = [d.library_name for d in app_deps if d.dependency_type == "direct"]
+        for dep in app_deps:
+            if dep.dependency_type == "direct":
+                parent_library = app_id
+            else:
+                # Single parent only; arbitrary pick when several direct deps could apply.
+                parent_library = rng.choice(direct_names)
+
+            deps.append(
+                Dependency(
+                    app_id=dep.app_id,
+                    library_name=dep.library_name,
+                    version=dep.version,
+                    license_type=dep.license_type,
+                    dependency_type=dep.dependency_type,
+                    parent_library=parent_library,
+                    last_updated=dep.last_updated,
+                    label_category=dep.label_category,
                 )
             )
 
@@ -344,7 +375,7 @@ def derive_label(
             "severity": severity,
             "explanation": (
                 f"Transitive dependency matches {top['cve_id']} (CVSS {top['cvss_score']}). "
-                "Exposure inherited through dependency chain."
+                f"Introduced via {dep.parent_library}."
             ),
         }
 
@@ -409,7 +440,7 @@ def write_outputs(
 
     sbom_fields = [
         "app_id", "library_name", "version", "license_type",
-        "dependency_type", "last_updated",
+        "dependency_type", "parent_library", "last_updated",
     ]
     with open(OUTPUT_DIR / "sbom_dependencies.csv", "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=sbom_fields)
@@ -421,6 +452,7 @@ def write_outputs(
                 "version": dep.version,
                 "license_type": dep.license_type,
                 "dependency_type": dep.dependency_type,
+                "parent_library": dep.parent_library,
                 "last_updated": dep.last_updated.isoformat(),
             })
 
